@@ -1,3 +1,3 @@
-from mortalite.mortalite import render
+from mortalite.analyse_mortalite import render
 
 render()

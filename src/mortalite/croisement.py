@@ -38,8 +38,8 @@ FRAMBOISE = "#A13D63"
 
 @st.cache_data
 def load_urbanite():
-    BASE_DIR = Path(__file__).resolve().parents[2]
-    DATA_PROCESSED = BASE_DIR / "data" / "processed"
+    BASE_DIR = Path(__file__).resolve().parents[1]
+    DATA_PROCESSED = BASE_DIR / "data"
     path = DATA_PROCESSED / "urbanite.csv"
 
     if not path.exists():
@@ -50,8 +50,8 @@ def load_urbanite():
 
 @st.cache_data
 def load_mortalite():
-    BASE_DIR = Path(__file__).resolve().parents[2]
-    DATA_PROCESSED = BASE_DIR / "data" / "processed"
+    BASE_DIR = Path(__file__).resolve().parents[1]
+    DATA_PROCESSED = BASE_DIR / "data"
     path = DATA_PROCESSED / "mortalite_2023_standardise_all.csv"
 
     if not path.exists():
@@ -101,7 +101,7 @@ def render_croisement():
     df_merge,
     x="apl_medecins_std",
     y="taux_total",
-    trendline="ols",
+    #trendline="ols",
     color_discrete_sequence=[PRUNE]
     )
 
@@ -129,7 +129,7 @@ def render_croisement():
         df_occ,
         x="apl_medecins_std",
         y="taux_total",
-        trendline="ols",
+        #trendline="ols",
         color_discrete_sequence=[TERRACOTTA]
     )
 

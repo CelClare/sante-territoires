@@ -49,8 +49,8 @@ def get_intensite_globale():
     # Chargement local
     # ---------------------------
 
-    BASE_DIR = Path(__file__).resolve().parents[2]
-    DATA_PROCESSED = BASE_DIR / "data" / "processed"
+    BASE_DIR = Path(__file__).resolve().parents[1]
+    DATA_PROCESSED = BASE_DIR / "data"
 
     path = DATA_PROCESSED / "mortalite_2023_standardise_all.csv"
 
