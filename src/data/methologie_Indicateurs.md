@@ -52,22 +52,6 @@ Cette transformation permet de comparer des indicateurs de nature différente.
 
 ---
 
-## Catégorisation des territoires
-
-Pour faciliter l'interprétation, les scores sont transformés en **quintiles nationaux**.
-
-Chaque territoire est classé dans une catégorie :
-
-- Q1 : très faible
-- Q2 : faible
-- Q3 : moyen
-- Q4 : bon
-- Q5 : très bon
-
-Cette approche permet de situer rapidement un territoire dans la distribution nationale.
-
----
-
 ## Agrégation territoriale
 
 Les indicateurs sont initialement calculés au niveau communal.
