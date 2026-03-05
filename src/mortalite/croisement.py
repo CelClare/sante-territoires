@@ -101,7 +101,7 @@ def render_croisement():
     df_merge,
     x="apl_medecins_std",
     y="taux_total",
-    trendline="ols",
+    #trendline="ols",
     color_discrete_sequence=[PRUNE]
     )
 
@@ -129,7 +129,7 @@ def render_croisement():
         df_occ,
         x="apl_medecins_std",
         y="taux_total",
-        trendline="ols",
+        #trendline="ols",
         color_discrete_sequence=[TERRACOTTA]
     )
 
