@@ -415,11 +415,10 @@ with tab_repartition:
     
 with tab_methodo:
     st.subheader("Méthodologie")
-    st.markdown('''
-### Limite liée au référentiel communal
 
-Les données d’accessibilité aux professionnels de santé (APL) utilisées dans l’analyse correspondent au millésime 2023, tandis que le référentiel communal utilisé pour la cartographie repose sur la structure administrative la plus récente.
+    path_md = DATA_DIR / 'methologie_Indicateurs.md'
+    with open(path_md, "r", encoding="utf-8") as f:
+        contenu_md = f.read()
 
-Certaines communes ayant connu des fusions ou modifications administratives peuvent donc présenter des écarts de correspondance. Ces cas restent marginaux et n’affectent pas significativement les tendances générales observées.
-''')
+    st.markdown(contenu_md)
     
