@@ -54,8 +54,8 @@ def style_fig(fig):
 
 @st.cache_data
 def load_data():
-    BASE_DIR = Path(__file__).resolve().parents[2]
-    DATA_PROCESSED = BASE_DIR / "data" / "processed"
+    BASE_DIR = Path(__file__).resolve().parents[1]
+    DATA_PROCESSED = BASE_DIR / "data"
     path = DATA_PROCESSED / "toutes_causes.csv"
 
     if not path.exists():
@@ -66,8 +66,8 @@ def load_data():
 
 @st.cache_data
 def load_detail():
-    BASE_DIR = Path(__file__).resolve().parents[2]
-    DATA_PROCESSED = BASE_DIR / "data" / "processed"
+    BASE_DIR = Path(__file__).resolve().parents[1]
+    DATA_PROCESSED = BASE_DIR / "data"
     path = DATA_PROCESSED / "mortalite_standardise_2010-2023.csv"
 
     if not path.exists():
@@ -156,9 +156,9 @@ def render_dynamique():
     st.plotly_chart(fig, use_container_width=True)
 
     st.info(
-    "La mortalité diminue progressivement jusqu’en 2019, "
-    "avec une rupture nette en 2020 liée au choc sanitaire. "
-    "L’Occitanie évolue parallèlement à la France, sans divergence structurelle."
+    "La mortalité diminue progressivement jusqu’en 2019."
+    "En 2020, on observe une rupture liée au choc sanitaire, avec un écart plus marqué entre l’Occitanie et la France."
+    "Toutefois, les trajectoires restent globalement parallèles sur la période longue, suggérant l’absence de divergence structurelle durable."
     )
 
     st.divider()
