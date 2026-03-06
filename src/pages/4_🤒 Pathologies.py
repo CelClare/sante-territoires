@@ -4,8 +4,17 @@ import matplotlib .pyplot as plt
 import seaborn as sns
 import streamlit as st
 import re
+from pathlib import Path
 
-data = pd.read_csv('data/pathologie_clean.csv',sep=",")
+try:
+    BASE_DIR = Path(__file__).resolve().parent
+except NameError:
+    BASE_DIR = Path.cwd()
+
+ROOT = BASE_DIR.parent
+DATA_DIR = ROOT / "data"
+
+data = pd.read_csv(DATA_DIR / 'pathologie_clean.csv',sep=",")
 # Création des onglets
 tab1, tab2, tab3 = st.tabs([
     " Profil épidémiologique de la Haute-Garonne (2023)",
