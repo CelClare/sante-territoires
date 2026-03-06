@@ -5,7 +5,7 @@ from PIL import Image
 # CONFIGURATION DE LA PAGE
 # ---------------------------------------------------------
 st.set_page_config(
-    page_title="Projet Data Analyst – Homepage",
+    page_title="Projet Data Analytics – Homepage",
     page_icon="📊",
     layout="wide"
 )
@@ -13,13 +13,13 @@ st.set_page_config(
 # ---------------------------------------------------------
 # HEADER
 # ---------------------------------------------------------
-st.title("📊 Projet de Fin d'Études – Data Analyst : Comment aider les acteurs locaux à réaliser un diagnostic de santé publique sur leur territoire en Occitanie?")
-st.subheader("Analyse, automatisation et visualisation de données")
+st.title("📊 Projet de fin de bootcamp – Data Analytics.")
+
+st.subheader("Comment aider les acteurs locaux à réaliser un diagnostic de santé publique sur leur territoire en Occitanie?")
 
 st.markdown(
     """
-Bienvenue sur le tableau de bord interactif réalisé dans le cadre du projet de fin d'études.  
-Ce site présente l’ensemble des analyses, visualisations et outils développés autour du jeu de données sélectionné.
+Cette application présente l’ensemble des analyses, visualisations et outils développés autour des jeux de données sélectionnés.
 
 ---
 """
@@ -49,10 +49,12 @@ st.markdown(
     """
 L'application est organisée en plusieurs sections accessibles via le menu latéral :
 
-- **🏠 Accueil** : Présentation générale du projet.  
-- **🏢 Etablissements** : Données relatives aux établissements de santé.  
-- **🤒 Pathologies** : Données relatives aux pathologies sur le territoire  
-- .........
+- **🏠 Accueil** : Présentation générale du projet. 
+- **🩺 Offre de soins** : Analyse des indicateurs de vulnérabilité
+- **🏢 Etablissements** : Localisation des établissements de santé.  
+- **🤒 Pathologies** : Analyse des pathologies sur le territoire  
+- **☠️ Mortalite** : Analyse des indicateurs de mortalité
+- **📖 Lexique** : Définition des acronymes
 """
 )
 
@@ -67,7 +69,7 @@ La démarche suivie repose sur les étapes classiques d’un projet data :
 
 1. **Compréhension du besoin métier**  
 2. **Collecte et exploration des données**  
-3. **Nettoyage et préparation (ETL)**  
+3. **Nettoyage et préparation (ELT)**  
 4. **Analyses statistiques et visualisations**  
 5. **Modélisation (si applicable)**  
 6. **Synthèse et recommandations**  
@@ -81,4 +83,4 @@ La démarche suivie repose sur les étapes classiques d’un projet data :
 # FOOTER
 # ---------------------------------------------------------
 st.markdown("---")
-st.caption("Projet réalisé dans le cadre de la certification Data Analyst – Streamlit App")
+st.caption("Projet réalisé dans le cadre du bootcamp Data Analytics – Artefact School of Data")
