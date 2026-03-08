@@ -100,7 +100,7 @@ def get_weighted_means(dataframe, columns, weight_col='population'):
     return pd.Series(results)
 
 # --- INTERFACE ---
-st.title("📂 Analyse de l'Offre de Soins")
+st.title("🩺 Analyse de l'Offre de Soins")
 
 # Création des 3 onglets
 tab_carte, tab_histo, tab_radar, tab_table, tab_repartition, tab_methodo = st.tabs(["📍 Carte", "📊 APL", "🕸️ Multi Facteurs", "📋 Tableaux (détails)", "🗂️ Répartition", "ℹ️ Méthodologie"])
@@ -196,7 +196,6 @@ with tab_carte:
 
 # --- ONGLET 2 : GRAPHIQUES ---
 with tab_histo:
-    st.subheader("Acessibilioté aux soins")
     df_occitanie, df_comparaison = load_data()
     
     # 1. Préparation des données 
@@ -206,7 +205,6 @@ with tab_histo:
     df_plot = df_comparaison.loc[cols_etude, ['Pyrénées_Audoises', 'Toulouse', 'Occitanie', 'France']]
 
     # 2. Création de la figure Streamlit
-    st.title("Analyse de l'offre de soins")
     st.subheader("Comparaison de l'accessibilité (APL)")
 
     # Utilisation explicite de l'objet figure pour éviter les avertissements Streamlit

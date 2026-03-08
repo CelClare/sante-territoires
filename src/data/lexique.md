@@ -1,4 +1,4 @@
-# 📜 Lexique
+# 📖 Lexique
 
 **APL**: **A**ccessibilité **P**otentielle **L**ocalisée, est l’indicateur utilisé pour mesurer l’accessibilité aux professionnels de santé. Dans notre projet : médecins généralistes, infirmières, kinésithérapeutes, dentistes et sage-femmes.
 
